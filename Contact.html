@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/980eb9f842.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("user_nQSrDDdipqZocySB164br");
+      emailjs.send("gmail", "feedback_response", {
+                name: "Membrane",
+                notes: "Feedback Report"
+   })();
+</script>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Feedback Form</title>
+</head>
+<body>
+<main>
+<header>
+<!--- Game Title -->
+<div class="gameFont">
+        <h1><b>Feedback Form</b> </h1>
+                       
+</div>
+
+</header>
+
+<!-- Game Panel With Selections To Pick-->
+<div class="panel">
+        <div class="returnButton gameFont">
+        <button type="submit" class="btn btn-secondary"> <a href="index.html" class="levelCounterFont"> Back To Membrane  </a> </button>
+        </div>
+  
+         <form onsubmit="return sendMail(this);">
+                        <input type="text" name="name" id="fullname" class="form-control" placeholder="Name" required />
+                        <input type="email" name="email" id="emailaddress" class="form-control" placeholder="Email" required />
+                        <textarea rows="5" name="projectsummary" id="projectsummary" class="form-control" placeholder="Details of feedback" required></textarea>
+                        <div class="form-row text-center">
+                            <div class="col">
+                                <button type="submit" class="btn btn-secondary levelCounterFont">Send Feedback</button>
+                            </div>
+                        </div>
+        </form>
+
+        
+</div>
+
+
+</main>
+<script src="js/emailAPI.js"> </script> 
+</body>
+</html>

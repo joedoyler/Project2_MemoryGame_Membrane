@@ -1,0 +1,177 @@
+/* Body styling*/
+body { 
+    background: url("https://images.pexels.com/photos/1376766/nature-milky-way-galaxy-space-1376766.jpeg?cs=srgb&dl=photography-of-stars-and-galaxy-1376766.jpg&fm=jpg"),  no-repeat;
+    background-size:cover;
+    animation-name: zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+main {
+    background: url("https://images.pexels.com/photos/783944/pexels-photo-783944.jpeg?cs=srgb&dl=blue-skies-783944.jpg&fm=jpg"), no-repeat;
+    background-size: cover;
+    min-height:80vh;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* setting up css for game title ,github text-stroke generator*/
+
+.gameFont {
+    text-align:center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    width:100%;
+    padding-top: 5px;
+    color:  #ff9966;
+    text-shadow: rgb(0, 12, 17) 2px 0px 0px, rgb(0, 12, 17) 1.75517px 0.958851px 0px, rgb(0, 12, 17) 1.0806px 1.68294px 0px, rgb(0, 12, 17) 0.141474px 1.99499px 0px, rgb(0, 12, 17) -0.832294px 1.81859px 0px, rgb(0, 12, 17) -1.60229px 1.19694px 0px, rgb(0, 12, 17) -1.97998px 0.28224px 0px, rgb(0, 12, 17) -1.87291px -0.701566px 0px, rgb(0, 12, 17) -1.30729px -1.5136px 0px, rgb(0, 12, 17) -0.421592px -1.95506px 0px, rgb(0, 12, 17) 0.567324px -1.91785px 0px, rgb(0, 12, 17) 1.41734px -1.41108px 0px, rgb(0, 12, 17) 1.92034px -0.558831px 0px;
+}
+
+h2, h3 {
+    font-family: "Oswald", cursive, sans-serif;
+    color: rgb(43, 159, 226);
+    text-shadow: rgb(0, 12, 17) 2px 0px 0px, rgb(0, 12, 17) 1.75517px 0.958851px 0px, rgb(0, 12, 17) 1.0806px 1.68294px 0px, rgb(0, 12, 17) 0.141474px 1.99499px 0px, rgb(0, 12, 17) -0.832294px 1.81859px 0px, rgb(0, 12, 17) -1.60229px 1.19694px 0px, rgb(0, 12, 17) -1.97998px 0.28224px 0px, rgb(0, 12, 17) -1.87291px -0.701566px 0px, rgb(0, 12, 17) -1.30729px -1.5136px 0px, rgb(0, 12, 17) -0.421592px -1.95506px 0px, rgb(0, 12, 17) 0.567324px -1.91785px 0px, rgb(0, 12, 17) 1.41734px -1.41108px 0px, rgb(0, 12, 17) 1.92034px -0.558831px 0px;
+}
+/* Setting Up Style For Buttons On Panel, w3schools linear gradient*/
+
+.panel{
+    border-radius: 50px;
+    margin:auto;
+    padding-top: 50px;
+    text-align:center;
+    width: 75vw;
+    height: 650px;
+    background: linear-gradient(to bottom, #0033cc 0%, #ff9966 100%);
+}
+
+/*Separate Styling For Options*/
+
+
+.option1 { 
+
+    width: 125px;
+    height: 125px;
+    border-radius: 20%;
+    display:block;
+    margin:auto;
+    margin-bottom:5px;
+    background-color: red;
+
+}
+
+.option2 { 
+    
+    margin-bottom:5px;
+    border-radius: 20%;
+    display:block;
+    margin:auto;
+    width: 125px;
+    height: 125px;
+    background-color: green;
+   
+}
+
+.option3 { 
+
+    display:block;
+    margin:auto;
+    margin-bottom:5px;
+    width:125px;
+    height: 125px;
+    border-radius: 20%;
+    background-color: blue;
+    
+}
+
+.option4 { 
+
+    display:block;
+    margin:auto;
+    margin-bottom:5px;
+    width:125px;
+    height: 125px;
+    border-radius: 20%;
+    background-color: yellow;
+
+}
+
+.colorSelect {
+    color:black;
+    box-shadow: #ff9966;
+    display:hidden;
+}
+
+/* Options Active */
+.select:hover {
+    color: #ff9966;
+    animation-name: zoom;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes zoom {
+        from {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Level Counter */
+.levelCounterFont {
+    text-align:center;
+    text-transform:capitalize;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 30px;
+    color:white;
+    padding:10px;
+    text-shadow: rgb(0, 12, 17) 2px 0px 0px, rgb(0, 12, 17) 1.75517px 0.958851px 0px, rgb(0, 12, 17) 1.0806px 1.68294px 0px, rgb(0, 12, 17) 0.141474px 1.99499px 0px, rgb(0, 12, 17) -0.832294px 1.81859px 0px, rgb(0, 12, 17) -1.60229px 1.19694px 0px, rgb(0, 12, 17) -1.97998px 0.28224px 0px, rgb(0, 12, 17) -1.87291px -0.701566px 0px, rgb(0, 12, 17) -1.30729px -1.5136px 0px, rgb(0, 12, 17) -0.421592px -1.95506px 0px, rgb(0, 12, 17) 0.567324px -1.91785px 0px, rgb(0, 12, 17) 1.41734px -1.41108px 0px, rgb(0, 12, 17) 1.92034px -0.558831px 0px;
+    background-color: rgba(211,211,211,0,5);
+}
+/* Footer */ 
+
+footer {
+   
+    clear:both;
+    background-color:#ff9966;
+    width:100%;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    text-align:center;
+    margin-bottom: 10px;
+    margin-top:0px;
+}
+
+.footerSections {
+    width:40%;
+    padding:20px;
+    display:inline-block;
+    border-radius: 5%;
+    text-align: center;
+    margin:auto;
+}
+
+
+/*------ Contact Page -----*/
+/*------ Feedback Form ----*/
+.panel form{
+    display:inline-block;
+    width: 60vw;
+    height:80vh;
+    padding-top: 45px;
+}
+
+.panel button {
+    display:inline-block;
+    padding: 30px;
+    width: 30vw;
+    background: linear-gradient(to bottom, #0033cc 0%, #ff9966 100%);
+}
+
+.returnButton {
+    position:relative;
+}
+
