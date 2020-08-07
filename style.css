@@ -45,7 +45,6 @@ h2, h3 {
 
 /*Separate Styling For Options*/
 
-
 .option1 { 
 
     width: 125px;
@@ -54,7 +53,7 @@ h2, h3 {
     display:block;
     margin:auto;
     margin-bottom:5px;
-    background-color: red;
+    background-color: black;
 
 }
 
